@@ -1,0 +1,186 @@
+/* mulish font from google font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap');
+
+/* shared style */
+* {
+    font-family: Mulish;
+
+
+}
+.home {
+    color: #FF5400;
+}
+
+body {
+    background: #FFF;
+}
+
+/* header section start */
+
+header {
+    background: #FFF;
+    /* padding: 50px 125px; */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 1rempx;
+    font-weight: 400;
+
+}
+
+.travel {
+    color: #FF5400;
+}
+
+/* banner section start */
+.banner {
+    text-align: center;
+    height: 500px;
+    background-image: url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+.section-tittle {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #131318;
+}
+
+.text-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(19, 19, 24, 0.70);
+
+}
+
+.btn-search {
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.btn-find {
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.btn-primary {
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 800;
+    padding: 20px 25px;
+    border: 0;
+    text-align: center;
+
+}
+
+/* main section start */
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+.popular-tours {
+    display: flex;
+    gap: 2rem;
+}
+
+.destination {
+    text-align: center;
+
+}
+.destination-img1 {
+    display: flex;
+    flex-direction: row;
+    /* justify-items: center; */
+    justify-content: space-evenly;
+    gap: 20px;
+    /* padding: 1rem; */
+}
+
+
+
+
+
+
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    /* padding: 180px 280px; */
+    
+}
+
+.footer-tittle {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+
+
+
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav li a{
+        flex-direction: column;
+    }
+    .popular-tours {
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .popular-tours-img img {
+        width: 90%;
+        padding: 1rem;
+    }
+
+}
+
+
+/* large device (laptop/desktop */
+@media screen and (min-width: 992px) and (max-width: 1440px) {}
